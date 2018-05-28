@@ -8,8 +8,8 @@ function setup() {
 }
 
 function draw() {
-  background(200); // plano de fundo
-  ellipse(xj, y, 25,25); // elipse controlada pelo teclado
+  background(100); // plano de fundo
+  ellipse(xj, yj, 25,25); // elipse controlada pelo teclado
   if ( keyIsDown(LEFT_ARROW) ){
     xj = xj - 3; 
   }
@@ -17,10 +17,10 @@ function draw() {
   	xj = xj + 3;
   }
   if ( keyIsDown(UP_ARROW) ) {
-    y = y - 3;
+    yj = yj - 3;
   }
   if ( keyIsDown(DOWN_ARROW) ){
-    y = y + 3;
+    yj = yj + 3;
   }
   if (x > width){
     x = random(-400,-40) // demorar para aparecer na tela
@@ -31,5 +31,5 @@ function draw() {
   if (x > width){
     x = random(-400,-30); // valor aleatorio, aparecer depois
   } 
-  
+   
 }
