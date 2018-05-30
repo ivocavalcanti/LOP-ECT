@@ -1,7 +1,7 @@
 var xi = 15; // inimigo
 var yi = 15; // inimigo
-var xj = 15; // jogador
-var yj = 15; // jogador
+var xj = 250; // jogador
+var yj = 480; // jogador
 var disparo = false; // condição do tiro
 var xdi, ydi; // disparo
 function setup() {
@@ -41,10 +41,9 @@ function draw() {
   }
   if (disparo) {
     ellipse(xdi,ydi,7,7) // dimensão do disparo
-    xdi = xdi + 15; // andamento do tiro
-   	if ( xdi > width ) {
+    ydi = ydi - 15; // andamento do tiro
+   	if ( ydi < length ) {
       disparo = false;
     }
   }
-   
 }
