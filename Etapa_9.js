@@ -13,7 +13,7 @@ var vy = [];
 var vdx = [];
 var vdy = [];
 var vtam = [];
-var qt = 30; 
+var qt = 10; 
 var tamAren;
 var vidas = 5; // vidas
 var pontos = 0; // pontos no jogo
@@ -126,14 +126,17 @@ for(i=0;i<qt;i++){
   if (pontos == 20 ) {
         tela = 3; 
     }
+    if(vidas < 0){
+      background(0);
+    textSize(32); 
+    fill(135,206,235);
+    text("GAME OVER", 130, 250);
+    }
     if ( tela == 3) {
     background(0);
     textSize(32); 
     fill(135,206,235);
-    text("FIM DE JOGO", 150, 250);
-    if (keyIsDown(32) ) {
-       tela = 1;
-    } 
+    text("PARABÉNS JOGO COMPLETO", 20, 250);
   }
 }
 }
