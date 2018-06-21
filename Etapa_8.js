@@ -138,11 +138,17 @@ for(i=0;i<5*nivel;i++){
     text("GAME OVER", 140, 250);
     textSize(16);
     text("DESEJA JOGAR NOVAMENTE? (s/n)", 110, 350);
-      /*if(keyPressed(115)){
+     /* if(keyPressed(115)){
         tela=1;
         nivel=1;
         pontos=0;
         vida=10;
+        for (i=0;i<25;i++){
+    vx[i] = random(0,tamAren); 
+    vy[i] = random(0,tamAren);
+    vdx[i] = random(-6,6);
+    vdy[i] = random(-6,6);  
+  }
       }*/
     }
     if ( tela == 3) {
@@ -152,6 +158,18 @@ for(i=0;i<5*nivel;i++){
     text("PARABÉNS JOGO COMPLETO", 20, 250);
     textSize(16);
     text("DESEJA JOGAR NOVAMENTE? (s/n)", 110, 350);
+      /*if(keyPressed(115)){
+        tela=1;
+        nivel=1;
+        pontos=0;
+        vida=10;
+        for (i=0;i<25;i++){
+    vx[i] = random(0,tamAren); 
+    vy[i] = random(0,tamAren);
+    vdx[i] = random(-6,6);
+    vdy[i] = random(-6,6);  
+  }
+      }*/
   }
   }
   }
