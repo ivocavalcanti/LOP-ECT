@@ -23,11 +23,17 @@ var jogo=true;
 var img;
 var img2;
 var img3;
+var img4;
+var img5;
+var img6;
 
 function preload() {
   img = loadImage('meteoro.png');
   img2 = loadImage('space.png');
   img3 = loadImage('nave1.png');
+  img4 = loadImage('PRESS_ENTER.png');
+  img5 = loadImage('YOU_WON.png');
+  img6 = loadImage('GAME_OVER.png');
 }
 
 function setup() {
@@ -49,7 +55,8 @@ function draw() {
     background(0);
     textSize(32); 
     fill(135,206,235);
-    text("ENTER", 200, 250);
+    image(img4,150, 200);
+    //text("ENTER", 200, 250);
     if (keyIsDown(ENTER) ) {
        tela = 2;  
     } 
@@ -147,9 +154,10 @@ for(i=0;i<5*nivel;i++){
       background(0);
     textSize(32); 
     fill(135,206,235);
-    text("GAME OVER", 140, 250);
+    image(img6,50, 70);
+    //text("GAME OVER", 140, 250);
     textSize(16);
-    text("DESEJA JOGAR NOVAMENTE? (s/n)", 110, 350);
+    text("DESEJA JOGAR NOVAMENTE? (s/n)", 110, 380);
      /* if(keyPressed(115)){
         tela=1;
         nivel=1;
@@ -167,7 +175,8 @@ for(i=0;i<5*nivel;i++){
     background(0);
     textSize(32); 
     fill(135,206,235);
-    text("PARABÉNS JOGO COMPLETO", 20, 250);
+    image(img5,123, 190);
+    //text("PARABÉNS JOGO COMPLETO", 20, 250);
     textSize(16);
     text("DESEJA JOGAR NOVAMENTE? (s/n)", 110, 350);
       /*if(keyPressed(115)){
